@@ -3,4 +3,5 @@
 Basic python console game  
 
 ## Screenshots
-<img width="431" alt="image" src="https://github.com/BtNowakowski/hangman/assets/107316656/a582adc3-7696-493d-8031-eb2eac0beba1">
+<img width="445" alt="image" src="https://github.com/BtNowakowski/hangman/assets/107316656/ad33c062-d27e-4eb2-a68d-5c0f4ec7f7e0">
+
