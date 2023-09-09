@@ -1,4 +1,4 @@
-# hangman
+# Hangman
 ## Description
 Basic python console game  
 
