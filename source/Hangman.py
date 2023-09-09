@@ -37,9 +37,14 @@ class Hangman:
         if guess.isnumeric():
             print("Please enter a letter!")
             return False
-        if len(guess) != 1:
+
+        if guess == self.word:
+            print(f"You win!, the word was: {self.word}")
+            exit(0)
+        elif len(guess) != 1:
             print("Please enter a single letter!")
             return False
+
         if guess in self.guesses:
             print("You already guessed that!")
             return False
@@ -48,7 +53,7 @@ class Hangman:
     def get_guess(self) -> str:
         while True:
             try:
-                guess = input("Guess a letter: ").lower()
+                guess = input("Guess a letter or word: ").lower()
             except KeyboardInterrupt:
                 print("\nGoodbye!")
                 exit(0)
