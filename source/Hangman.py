@@ -55,12 +55,9 @@ class Hangman:
             except ValueError:
                 print('Please enter a letter!')
                 
-            
-            if not self.validate_guess(guess):
-                continue
-            else:
+            if self.validate_guess(guess):
                 break
-            
+            continue
         return guess
     
     def check_guess(self, guess: str) -> bool:
@@ -86,7 +83,6 @@ class Hangman:
         self.get_word()
         while True:
             guess = self.get_guess()
-            
             clear_screen()
             if self.check_guess(guess):
                 self.update_word(guess)
